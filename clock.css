@@ -1,0 +1,82 @@
+#clock {
+  width: 410px;
+  height: 400px;
+  margin: 40px auto;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+  background:url("https://cssanimation.rocks/images/posts/clocks/ios_clock.svg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-color:#BCB197;
+  
+  
+}
+
+#seconds {
+  width: 4px;
+  height: 180px;
+  background-color: gray;
+  margin-left: 198px;
+  margin-top: 20px;
+  animation: rotate 60s infinite linear;
+  position: absolute;
+}
+
+#minutes {
+  width: 6px;
+  height: 140px;
+  background-color: darkslategray;
+  margin-left: 197px;
+  margin-top: 60px;
+  animation: rotate 3600s infinite linear;
+  position: absolute;
+}
+
+#hours {
+  width: 8px;
+  height: 120px;
+  background-color: black;
+  margin-left: 196px;
+  margin-top: 80px;
+  animation: rotate 43200s infinite linear;
+  position: absolute;
+}
+
+#name{
+  font-size:50px;
+  text-align: center;
+  margin-top: 250px;
+  color: gold;
+  font-style: oblique;
+ text-shadow: 4px 4px 4px black;
+}
+
+#name1{
+  font-size:50px;
+  text-align: center;
+  font-style: oblique;
+ text-shadow: 5px 5px 5px black;
+  width: 100px;
+  height: 100px;
+  animation-name: example;
+  animation-duration: 4s;
+  margin-left: 545px; 
+
+}
+
+@keyframes example {
+  from {color:pink;}
+  to {color: yellow;}
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    transform-origin: center bottom;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center bottom;
+  }
+}
